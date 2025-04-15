@@ -12,5 +12,9 @@
     ],
     "config": {
         "platform": {}
-    }
+    },
+  "require": {
+    "ext-pdo": "*",
+      "ext-json": "*"
+  }
 }

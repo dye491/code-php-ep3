@@ -36,9 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'image' => '',
         'age' => '',
     );
-    $pets[] = $newPet;
 
-    save_pets($pets);
+    $pdo = get_connection();
+    insert_pet($pdo, $newPet);
 
     header('Location: /');
     die;
